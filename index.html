@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Рельеф — объёмные картины ручной работы</title>
+<meta name="description" content="Авторские объёмные картины: структурная паста, акрил и поталь на холсте. Готовые работы и живопись под заказ в размер вашего интерьера.">
+<meta property="og:title" content="Рельеф — объёмные картины ручной работы">
+<meta property="og:description" content="Авторские объёмные картины: структурная паста, акрил и поталь на холсте.">
+<meta property="og:image" content="assets/img/meduza-7.webp">
+<meta name="theme-color" content="#14161B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<a class="skip" href="#catalog">Перейти к каталогу</a>
+<div class="progress" id="progress" aria-hidden="true"><i></i></div>
+<div class="backdrop" aria-hidden="true"></div>
+
+<header class="top" id="top">
+  <div class="top__inner">
+    <a class="mark" href="#top" aria-label="На главную">
+      <span class="mark__glyph" aria-hidden="true"></span>
+      <span class="mark__name">Рельеф</span>
+    </a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#catalog">Работы</a>
+      <a href="#technique">Техника</a>
+      <a href="#order">Под заказ</a>
+      <a href="#delivery">Доставка</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="top__tel" href="tel:+7XXXXXXXXXX">+7 XXX XXX-XX-XX</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="mobilenav" aria-label="Открыть меню">
+      <span aria-hidden="true"></span><span aria-hidden="true"></span>
+    </button>
+  </div>
+  <div class="mnav" id="mobilenav" hidden>
+    <a href="#catalog">Работы</a>
+    <a href="#technique">Техника</a>
+    <a href="#order">Под заказ</a>
+    <a href="#delivery">Доставка</a>
+    <a href="#contacts">Контакты</a>
+    <a class="mnav__tel" href="tel:+7XXXXXXXXXX">+7 XXX XXX-XX-XX</a>
+  </div>
+</header>
+
+<main>
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap hero__grid">
+    <div class="hero__body">
+      <p class="hero__kicker">Авторская мастерская объёмной живописи</p>
+      <h1 class="hero__title" id="hero-title">Картина, которую<br>видно на ощупь</h1>
+      <p class="hero__lead">Рельеф набирается вручную структурной пастой, слой за слоем. Свет цепляется за каждый гребень — и рисунок меняется вместе с ним в течение дня.</p>
+      <div class="hero__acts">
+        <a class="btn btn--gold" href="#catalog">Смотреть работы</a>
+        <a class="btn btn--ghost" href="#order">Заказать свою</a>
+      </div>
+      <dl class="hero__meta">
+        <div><dt>В наличии</dt><dd>5 работ</dd></div>
+        <div><dt>Тираж</dt><dd>по одному экземпляру</dd></div>
+        <div><dt>Под заказ</dt><dd>от 3 недель</dd></div>
+      </dl>
+    </div>
+
+    <figure class="hero__frame">
+      <video class="hero__video" id="heroVideo" poster="assets/img/hero-poster.webp"
+             data-src="assets/video/hero.mp4" data-src-sm="assets/video/hero-sm.mp4"
+             muted loop playsinline preload="none" aria-label="Все пять работ по очереди"></video>
+      <figcaption class="hero__cap">Пять работ, снятых в интерьере</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="creed" aria-label="О работах">
+  <div class="wrap creed__grid">
+    <p class="creed__text">Каждая работа существует в одном экземпляре. Я не печатаю копии и не повторяю сюжет дважды — если понравился мотив, из него рождается новая вещь, собранная под ваши стены, свет и размер.</p>
+    <dl class="creed__facts">
+      <div><dt>Основа</dt><dd>Холст на подрамнике, торцы прокрашены</dd></div>
+      <div><dt>Материалы</dt><dd>Структурная паста, акрил, поталь, матовый лак</dd></div>
+      <div><dt>Готовность</dt><dd>Крепление установлено, работа готова к развеске</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="catalog" id="catalog" aria-labelledby="catalog-title">
+  <div class="wrap">
+    <div class="head">
+      <h2 class="head__title" id="catalog-title">Работы в наличии</h2>
+      <p class="head__note">Пять готовых картин. Нажмите на любую, чтобы рассмотреть фактуру вблизи и посмотреть видео.</p>
+    </div>
+  </div>
+  <div class="wrap works" id="works"><!-- работы добавляются скриптом --></div>
+</section>
+
+<section class="technique" id="technique" aria-labelledby="technique-title">
+  <div class="wrap">
+    <div class="head">
+      <h2 class="head__title" id="technique-title">Как набирается рельеф</h2>
+      <p class="head__note">Пять этапов, между которыми картина в основном сохнет. Поэтому работа под заказ занимает недели, а не дни.</p>
+    </div>
+    <ol class="steps">
+      <li class="step">
+        <h3 class="step__title">Эскиз и раскладка</h3>
+        <p>Согласуем сюжет, форму и размер. На холсте размечаются основные массы, чтобы рельеф не спорил с композицией.</p>
+      </li>
+      <li class="step">
+        <h3 class="step__title">Набор массы</h3>
+        <p>Структурная паста наносится мастихином в несколько заходов. Самые высокие гребни поднимаются до 5–7 мм над холстом.</p>
+      </li>
+      <li class="step">
+        <h3 class="step__title">Прорезка деталей</h3>
+        <p>По полусухой пасте идёт мелкая графика: прожилки, ворс, штрих. Этот слой и даёт картине глубину при боковом свете.</p>
+      </li>
+      <li class="step">
+        <h3 class="step__title">Цвет и патина</h3>
+        <p>Акрил втирается в углубления и снимается с рёбер. Там, где нужен блеск, ложится поталь — тонкими фрагментами, вручную.</p>
+      </li>
+      <li class="step">
+        <h3 class="step__title">Лак и сборка</h3>
+        <p>Матовый лак защищает поверхность и убирает лишние блики. Ставится подвес, торцы дорабатываются, работа фотографируется.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="order" id="order" aria-labelledby="order-title">
+  <div class="wrap order__grid">
+    <div class="order__intro">
+      <h2 class="head__title" id="order-title">Картина под заказ</h2>
+      <p>Расскажите, что должно висеть на стене — сюжет, форму, размер и настроение. Я отвечу с предварительным эскизом и сроком, и только после вашего «да» начинаю работу.</p>
+      <ul class="order__list">
+        <li>Круг, квадрат, прямоугольник или диптих — форма любая</li>
+        <li>Размер подбирается под стену: от 40 см до 150 см по длинной стороне</li>
+        <li>Палитра собирается под интерьер, можно прислать фото комнаты</li>
+        <li>Обычный срок — от 3 до 6 недель в зависимости от размера</li>
+      </ul>
+      <p class="order__price">Стоимость считается индивидуально и фиксируется до начала работы.</p>
+    </div>
+
+    <div class="form" id="orderForm">
+      <div class="field">
+        <label for="f-name">Как к вам обращаться</label>
+        <input id="f-name" type="text" autocomplete="name" placeholder="Имя">
+      </div>
+      <div class="field">
+        <label for="f-contact">Телефон, почта или ник в мессенджере</label>
+        <input id="f-contact" type="text" autocomplete="tel" placeholder="+7 900 000-00-00">
+      </div>
+
+      <div class="field">
+        <span class="label" id="lbl-shape">Форма</span>
+        <div class="chips" role="group" aria-labelledby="lbl-shape" data-group="shape" data-mode="one">
+          <button type="button" class="chip" data-value="Круг">Круг</button>
+          <button type="button" class="chip" data-value="Квадрат">Квадрат</button>
+          <button type="button" class="chip" data-value="Прямоугольник">Прямоугольник</button>
+          <button type="button" class="chip" data-value="Пока не решил">Пока не решил</button>
+        </div>
+      </div>
+
+      <div class="field">
+        <span class="label" id="lbl-palette">Палитра — можно выбрать несколько</span>
+        <div class="chips" role="group" aria-labelledby="lbl-palette" data-group="palette" data-mode="many">
+          <button type="button" class="chip" data-value="Графит и серебро">Графит и серебро</button>
+          <button type="button" class="chip" data-value="Поталь">Поталь</button>
+          <button type="button" class="chip" data-value="Тёмная синь">Тёмная синь</button>
+          <button type="button" class="chip" data-value="Светлая, пастельная">Светлая, пастельная</button>
+          <button type="button" class="chip" data-value="Зелень">Зелень</button>
+        </div>
+      </div>
+
+      <div class="field field--pair">
+        <div>
+          <label for="f-size">Размер, см</label>
+          <input id="f-size" type="text" placeholder="Например, 90 × 60 или Ø 70">
+        </div>
+        <div>
+          <label for="f-date">Когда нужна работа</label>
+          <input id="f-date" type="text" placeholder="Например, к концу ноября">
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="f-idea">Сюжет и пожелания</label>
+        <textarea id="f-idea" rows="4" placeholder="Что должно быть на картине, где она будет висеть, какой свет в комнате"></textarea>
+      </div>
+
+      <p class="form__err" id="formErr" role="alert" hidden></p>
+      <button class="btn btn--gold btn--wide" type="button" id="formSend">Отправить заявку</button>
+      <p class="form__fine">Референсы и фото стены удобнее прислать в мессенджере — я напишу первой в ответ на заявку.</p>
+
+      <div class="form__done" id="formDone" hidden>
+        <h3>Заявка собрана</h3>
+        <p>Форма пока не подключена к почте. Скопируйте текст или отправьте его письмом — оба варианта содержат одно и то же.</p>
+        <pre class="form__preview" id="formPreview"></pre>
+        <div class="form__doneacts">
+          <button class="btn btn--gold" type="button" id="formCopy">Скопировать текст</button>
+          <a class="btn btn--ghost" id="formMail" href="#">Отправить письмом</a>
+          <button class="btn btn--plain" type="button" id="formBack">Изменить заявку</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="delivery" id="delivery" aria-labelledby="delivery-title">
+  <div class="wrap">
+    <h2 class="head__title" id="delivery-title">Покупка и доставка</h2>
+    <div class="cols">
+      <div class="col">
+        <h3>Как проходит покупка</h3>
+        <p>Вы пишете о понравившейся работе, я подтверждаю наличие и присылаю цену с учётом упаковки. Оплата — переводом, полностью или предоплатой 50% для заказных работ.</p>
+      </div>
+      <div class="col">
+        <h3>Упаковка</h3>
+        <p>Картина проклеивается по углам, закрывается плёнкой и пенопластом и уезжает в жёстком коробе. Круглые работы дополнительно фиксируются по диаметру.</p>
+      </div>
+      <div class="col">
+        <h3>Отправка</h3>
+        <p>По городу — курьером или самовывоз из мастерской. По стране — транспортной компанией с описью и страховкой; трек-номер присылаю в день отправки.</p>
+      </div>
+      <div class="col">
+        <h3>Если что-то пошло не так</h3>
+        <p>Снимите видео вскрытия коробки. При повреждении в пути возвращаю стоимость или пишу такую же работу заново — за свой счёт.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contacts" id="contacts" aria-labelledby="contacts-title">
+  <div class="wrap contacts__grid">
+    <div>
+      <h2 class="head__title" id="contacts-title">Написать в мастерскую</h2>
+      <p class="contacts__lead">Отвечаю обычно в течение дня. Если вопрос про конкретную работу — назовите её, так быстрее.</p>
+    </div>
+    <ul class="contacts__list">
+      <li><span>Телефон и мессенджеры</span><a href="tel:+7XXXXXXXXXX">+7 XXX XXX-XX-XX</a></li>
+      <li><span>Почта</span><a href="mailto:example@mail.ru">example@mail.ru</a></li>
+      <li><span>Мастерская</span><a href="#contacts">Город, улица — уточняется</a></li>
+      <li><span>Соцсети</span><a href="#contacts">@example</a></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <span>Рельеф — авторские объёмные картины</span>
+    <span>Все работы и фотографии принадлежат автору</span>
+  </div>
+</footer>
+
+<div class="viewer" id="viewer" hidden>
+  <div class="viewer__scrim" data-close></div>
+  <div class="viewer__panel" role="dialog" aria-modal="true" aria-labelledby="viewerTitle">
+    <button class="viewer__close" type="button" id="viewerClose" aria-label="Закрыть">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="1.4" fill="none"/></svg>
+    </button>
+
+    <div class="viewer__media">
+      <div class="stage" id="stage">
+        <div class="stage__box" id="stageBox"></div>
+        <button class="arrow arrow--prev" type="button" id="prevFrame" aria-label="Предыдущий кадр">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M15 4l-8 8 8 8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+        </button>
+        <button class="arrow arrow--next" type="button" id="nextFrame" aria-label="Следующий кадр">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M9 4l8 8-8 8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+        </button>
+      </div>
+
+      <div class="bar">
+        <button class="auto" type="button" id="autoBtn" aria-pressed="true" aria-label="Выключить автопоказ">
+          <svg class="auto__ring" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true">
+            <circle class="auto__track" cx="16" cy="16" r="13"></circle>
+            <circle class="auto__prog" cx="16" cy="16" r="13" id="autoProg"></circle>
+          </svg>
+          <span class="auto__ic" id="autoIc" aria-hidden="true"></span>
+        </button>
+        <span class="bar__label" id="autoLabel">Автопоказ — 9 с</span>
+        <span class="bar__count" id="frameCount">1 / 1</span>
+      </div>
+
+      <div class="thumbs" id="thumbs" role="tablist" aria-label="Кадры работы"></div>
+    </div>
+
+    <div class="viewer__info">
+      <h2 class="viewer__title" id="viewerTitle"></h2>
+      <p class="viewer__about" id="viewerAbout"></p>
+      <dl class="specs" id="viewerSpecs"></dl>
+      <p class="viewer__price">Цена по запросу</p>
+      <div class="viewer__acts">
+        <a class="btn btn--gold" id="viewerMail" href="#">Спросить цену</a>
+        <button class="btn btn--ghost" type="button" id="viewerOrder">Хочу похожую</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
